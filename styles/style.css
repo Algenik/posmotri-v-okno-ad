@@ -13,7 +13,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
   display: flex;
@@ -39,7 +39,6 @@ ol {
   list-style: none;
 }
 
-
 /* Кастомный скроллбар */
 .custom-scrollbar::-webkit-scrollbar {
   width: 4px;
@@ -50,13 +49,8 @@ ol {
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
 }
-
-/* :focus {
-  appearance: none;
-  outline: none;
-} */
 
 .visually-hidden {
   position: absolute;
@@ -68,9 +62,20 @@ ol {
   white-space: nowrap;
 }
 
+input {
+  cursor: pointer;
+  appearance: none;
+  border-width: 1px 0px 1px 0px;
+  letter-spacing: 0;
+  color: white;
+  background-color: #1b1919;
+  width: 225px;
+  height: 27px;
+}
+
 .title {
   text-transform: uppercase;
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -83,7 +88,7 @@ ol {
   color: white;
   border-width: 1px;
   border-color: white;
-  font-family: 'Fira Sans Condensed';
+  font-family: "Fira Sans Condensed";
   font-weight: 700;
   font-size: 18px;
   text-align: center;
@@ -111,9 +116,7 @@ ol {
 .content {
   display: grid;
   align-items: center;
-  /* justify-items: center; */
-  grid-template-areas: 
-    "result content__details";  
+  grid-template-areas: "result content__details";
   gap: 30px;
 }
 
@@ -121,9 +124,9 @@ ol {
   grid-area: result;
   display: grid;
   margin-right: 0px;
-  grid-template-areas: 
-  "video-container"
-  "search-form";
+  grid-template-areas:
+    "video-container"
+    "search-form";
 }
 
 .result__video-container {
@@ -136,14 +139,14 @@ ol {
   width: 711px;
   height: 386px;
 }
-  
+
 .search-form {
   grid-area: search-form;
   margin-top: 16px;
   padding-right: 11px;
   padding-left: 11px;
   display: inline-flex;
-  justify-content: space-between;  
+  justify-content: space-between;
   align-items: end;
   gap: 5px;
 }
@@ -153,20 +156,9 @@ ol {
 }
 
 .search-form__fieldset-title {
-  font-family: 'Fira Sans Condensed';
+  font-family: "Fira Sans Condensed";
   font-weight: 400;
   font-size: 18px;
-}
-
-input {
-  cursor: pointer;
-  appearance: none;
-  border-width: 1px 0px 1px 0px;
-  letter-spacing: 0;
-  color: white;
-  background-color: #1b1919;
-  width: 225px;
-  height: 27px;
 }
 
 .search-form__checkbox-list {
@@ -210,7 +202,6 @@ input {
   display: inline-block;
   width: 19px;
   height: 19px;
-  
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
@@ -229,11 +220,9 @@ input {
 
 .content__details {
   grid-area: content__details;
-  /* height: 100%; */
   margin-left: 0px;
   margin-top: -55px;
 }
-
 
 .content__accent {
   color: #545050;
@@ -248,7 +237,7 @@ input {
 .content__list {
   display: flex;
   flex-direction: column;
-  
+
   gap: 26px;
 }
 
@@ -259,9 +248,8 @@ input {
 
 .content__video-card-description-container {
   display: inline-flex;
-  /* display: inline-block; */
   flex-direction: column;
-  
+
   flex-grow: 1;
   width: 196px;
   height: 103px;
@@ -304,7 +292,7 @@ input {
 .content__video-card-title {
   display: inline-block;
   text-transform: uppercase;
-  font-family: 'Oswald';
+  font-family: "Oswald";
   font-weight: 700;
   font-size: 30px;
   overflow: hidden;
@@ -313,7 +301,7 @@ input {
 }
 
 .content__video-card-description {
-  font-family: 'Fira Sans Condensed';
+  font-family: "Fira Sans Condensed";
   font-weight: 400;
   font-size: 18px;
   line-height: 16.2px;
@@ -323,9 +311,7 @@ input {
   line-clamp: 4;
 }
 
-
 .content__video-card-thumbnail {
-  /* grid-area: video-card-thumbnail; */
   display: flex;
   justify-self: end;
   object-fit: fill;
